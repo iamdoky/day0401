@@ -6,13 +6,15 @@
 </head>
 <body>
 <h2>아이리스</h2>
-<form action="irisOK.do" method="post">
-    <input type="text" name="aa"><br>
-    <input type="text" name="bb"><br>
-    <input type="text" name="cc"><br>
-    <input type="text" name="dd"><br>
+<hr>
+<form action="iris.do" method="post">
+    <input type="text" name="aa" value="{{str_a}}"><br>
+    <input type="text" name="bb" value="{{str_b}}"><br>
+    <input type="text" name="cc" value="{{str_c}}"><br>
+    <input type="text" name="dd" value="{{str_d}}"><br>
     <input type="submit" value="확인">
+    <hr>
+    품종 : {{r}}
 </form>
-<textarea>{{i}}</textarea>
 </body>
 </html>

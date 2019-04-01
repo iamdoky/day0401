@@ -38,3 +38,9 @@ pre = clf.predict(test_data)
 
 ac_score = metrics.accuracy_score(test_label, pre)
 print("정답률: ",ac_score)
+
+# 문제를 주어 답을 찾는?
+real_data = [[5.9,3,4.2,1.5]]
+
+result = clf.predict(real_data)
+print(result)

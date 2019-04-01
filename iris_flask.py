@@ -14,7 +14,9 @@ def irisOK():
     c = request.form['cc']
     d = request.form['dd']
     data = day0401.func.iris(a,b,c,d)
-    return render_template('iris.html',data=data)
+    for i in data:
+        print(i)
+    return render_template('iris.html',i=i)
 
 if __name__=='__main__':
     app.run(debug=True,host='203.236.209.95')
